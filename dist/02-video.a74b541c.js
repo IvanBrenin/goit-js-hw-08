@@ -573,7 +573,7 @@ function videoTimeUpdate(e) {
     localStorage.setItem("videoplayer-current-time", e.seconds);
 }
 
-},{"@vimeo/player":"kmmUG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","lodash.throttle":"bGJVT"}],"kmmUG":[function(require,module,exports) {
+},{"@vimeo/player":"kmmUG","lodash.throttle":"bGJVT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kmmUG":[function(require,module,exports) {
 /*! @vimeo/player v2.18.0 | (c) 2022 Vimeo | MIT License | https://github.com/vimeo/player.js */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var global = arguments[3];
@@ -2380,6 +2380,6 @@ var FUNC_ERROR_TEXT = "Expected a function";
 }
 module.exports = throttle;
 
-},{}]},["lhSlO","fFZ34"], "fFZ34", "parcelRequire4c75")
+},{}]},["lhSlO","fFZ34"], "fFZ34", "parcelRequired7c6")
 
 //# sourceMappingURL=02-video.a74b541c.js.map
