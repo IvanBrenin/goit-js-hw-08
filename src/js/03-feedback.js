@@ -20,10 +20,15 @@ function formFieldsValues(e) {
 
 function onFormSubmit(event) {
     event.preventDefault()
+    if (event.currentTarget.elements.email.value === '' || event.currentTarget.elements.message.value === '') {
+        window.alert('Всі поля мають бути заповнені')
+    } else {
     event.currentTarget.reset()
     const parsedFormData = JSON.parse(localStorage.getItem('feedback-form-state'))
     console.log(parsedFormData)
     localStorage.removeItem('feedback-form-state')
+    }
+
 }
 
 if (localStorage.getItem('feedback-form-state')) {
@@ -31,3 +36,5 @@ if (localStorage.getItem('feedback-form-state')) {
     FeedbackInput.value = data.email
     FeedbackText.value = data.message
 }
+
+
